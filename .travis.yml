@@ -3,6 +3,6 @@ python:
   - "2.7"
 # command to install dependencies
 install:
-  - pip install -r test_requirements.txt
+  - pip install -r ./python/test_requirements.txt
 # command to run tests
-script: cd && python -m unittest discover
+script: cd python && python -m unittest discover
